@@ -1,0 +1,9 @@
+#Insert the following to /etc/mysql/my.cnf
+
+[mysqld]
+# Options for mysqld process:
+ndbcluster
+
+[mysql_cluster]
+# Options for NDB Cluster processes:
+ndb-connectstring=192.168.10.10 # contains the location of the management server

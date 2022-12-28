@@ -1,0 +1,7 @@
+create a new instance with ubuntu AMI installed
+Installed mysql-server 
+Command: sudo apt-get install mysql-server & 
+      sudo mysql_secure_installation to setup the password
+Consequently installed sakila database:
+Command1: SOURCE C:/temp/sakila-db/sakila-schema.sql;
+Command2: SOURCE C:/temp/sakila-db/sakila-data.sql;

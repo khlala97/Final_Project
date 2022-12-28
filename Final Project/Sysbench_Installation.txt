@@ -1,0 +1,12 @@
+#install sysbench: 
+sudo apt-get install sysbench
+
+#Accessing the credantials: 
+sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=my_db --mysql-use
+
+
+#The command to start the benchmark:
+
+sysbench --test=oltp --oltp-table-size=1000000 --oltp-test-mode=complex --oltp-read-only=off --num-threads=6 --max-time=60 --max-requests=0 --mysql-db=mydb --mysql-user=user_me --mysql-password=[PASSWORD] run
+
+//The command above takes in the username and password that wase used in setting up the databases and the type of format the output should be presented, in this case, read-only format.

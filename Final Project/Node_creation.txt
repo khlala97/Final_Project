@@ -1,0 +1,13 @@
+#After Creating four instances, one master and three slaves
+#Installing the mysql cluster by running the command:
+wget https://dev.mysql.com/get/Downloads/MySQL-Cluster-8.0/mysql-cluster-community-management-server_8.0.31-1ubuntu20.04_amd64.deb
+
+
+#The code used to start the master node
+ndb_mgmd -f var/lib/mysql-cluster/config.ini
+#Additional reference: https://cloudinfrastructureservices.co.uk/how-to-create-a-multi-node-mysql-cluster-on-ubuntu-20-04/
+#Configuration and installation of mysql-server on the master node : Edit the mysql config file:
+
+sudo nano /etc/mysql/my.cnf
+
+#And add the code in my.cnf.txt 
